@@ -1,4 +1,4 @@
-### Current Version: `1.1.1`
+### Current Version: `1.1.3`
 ### Prerequisites
 
 - Gradle Groovy or Kotlin DSL for Gradle
