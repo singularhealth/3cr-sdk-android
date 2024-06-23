@@ -1,5 +1,7 @@
 # @3cr/sdk-android
 
+(After a complete example?)[https://github.com/singularhealth/3cr-sdk-android-example]
+
 ### Current Version: `1.1.4`
 ### Prerequisites
 
