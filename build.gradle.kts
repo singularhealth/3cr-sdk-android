@@ -79,6 +79,7 @@ subprojects {
         }
         repositories {
             maven {
+                name = "LocalBuildDependency"
                 println(uri("${project.rootProject.projectDir.path}/build/repo"))
                 url = uri("${project.rootProject.projectDir.path}/build/repo")
             }
