@@ -1,9 +1,8 @@
 ### Current Version: `1.1.1`
 ### Prerequisites
 
-- Package manager like [yarn](https://classic.yarnpkg.com/en/), [npm](https://www.npmjs.com), etc.
-- Browser running a modern version
-- 3CR Version number
+- Gradle Groovy or Kotlin DSL for Gradle
+- Android Studio
 
 ### Project Setup
 
