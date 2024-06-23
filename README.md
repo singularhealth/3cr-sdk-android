@@ -53,7 +53,7 @@
       // build.gradle.kts
     
       dependencies {
-          implementation("com.github.elliottcooper:sdk-3cr-android:1.1.1")
+          implementation("com.github.singularhealth:3cr-sdk-android:1.1.1")
       }
     
       ```
@@ -66,7 +66,7 @@
       // build.gradle
     
       dependencies {
-         implementation 'com.github.elliottcooper:sdk-3cr-android:1.1.1'
+         implementation 'com.github.singularhealth:3cr-sdk-android:1.1.1'
       }
     
       ```
