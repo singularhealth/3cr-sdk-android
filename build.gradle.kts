@@ -1,3 +1,5 @@
+import org.gradle.internal.impldep.com.fasterxml.jackson.core.JsonPointer.compile
+
 plugins {
     id("maven-publish")
 }
@@ -26,8 +28,11 @@ subprojects {
             create<MavenPublication>(project.name) {
                 artifactId = "sdk-3cr-android"
                 group = "com.github.elliottcooper"
-                version = "1.0.24"
+                version = "1.1.1"
                 artifact("build/outputs/aar/${project.name}-debug.aar")
+                fileTree("*.jar").forEach {
+                    compile(it.path)
+                }
                 pom {
                     name = "@3cr/sdk-android"
                     description = "SDK to build and deploy 3Dicom Core Renderer for Android"
@@ -49,6 +54,19 @@ subprojects {
                         connection = "scm:git:git://github.com/elliottcooper/sdk-3cr-android"
                         developerConnection = "scm:git:ssh://github.com/elliottcooper/sdk-3cr-android.git"
                         url = "https://github.com/elliottcooper/sdk-3cr-android"
+                    }
+                    withXml {
+                        val depsNode  = asNode().appendNode("dependencies")
+
+                        val artifact = arrayOf("jackson-databind", "jackson-annotations")
+
+                        artifact.forEach {
+                            val depNode  = depsNode.appendNode("dependency")
+                            depNode.appendNode("groupId", "com.fasterxml.jackson.core")
+                            depNode.appendNode("artifactId", it)
+                            depNode.appendNode("version", "2.14.0")
+                        }
+
                     }
                 }
             }
