@@ -26,7 +26,7 @@ dependencies {
 }
 subprojects {
     group = "com.github.singularhealth"
-    version = "1.2.1"
+    version = "1.2.2"
     apply {
         plugin("maven-publish")
         plugin("ca.stellardrift.publish-github-release")
