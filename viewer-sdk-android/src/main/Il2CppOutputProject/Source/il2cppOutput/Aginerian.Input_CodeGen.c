@@ -1,0 +1,100 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC1B50842A4DF7A504396B9B1477C7B8BA6B4C0AC (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m49424A75D672234BCAE804384888C006F3182C18 (void);
+extern void AxisWithModifiersComposite_ReadValue_m7EA5DA95F3A0FC805ACF4FF8C90FE840F2C9B672 (void);
+extern void AxisWithModifiersComposite__ctor_m1F55033D901BF61E312071EE4247855A521E9C8D (void);
+extern void CustomInputRegistration_Register_mF1C24932DF98FDD99DE9ACC84ED2EFFD947F4F4F (void);
+extern void HighestMagnitudeFloatComparer_Compare_m4489B317AAB1E11454BE74F48A90AB7DEDB0BBD8 (void);
+extern void LowestMagnitudeFloatComparer_Compare_mF9E920CA47509D686ECE105F8825ADDA2CB6AE9F (void);
+extern void NegateButtonProcessor_Process_m4804E481075A9C699CAB23424200011C016B3560 (void);
+extern void NegateButtonProcessor__ctor_m5AE512DDDB4347F6722E4DBFE5A4203690BDDB50 (void);
+extern void NormalizeScreenHeightProcessor_Process_mC827A6B36252258A92F2849023C0EC2BF3C481CA (void);
+extern void NormalizeScreenHeightProcessor__ctor_m01A95028DBA83285F4EA84CBDF2919AEBD53F0B4 (void);
+extern void NormalizeScreenPositionProcessor_Process_m1CFDEB9CB53D9F894965020F2B412B7A120CA5C9 (void);
+extern void NormalizeScreenPositionProcessor__ctor_m62FB9D91577E2CAEABF871F253715FA731646797 (void);
+extern void NormalizeScreenWidthProcessor_Process_mCA53088C7B8DDB770C8151A709E997E2C5B6C834 (void);
+extern void NormalizeScreenWidthProcessor__ctor_m779C1DBFB4C855798B30C7B11189CD92CFB6EC59 (void);
+extern void Vector2WithModifiersComposite_ReadValue_m7586A5F36489DC55F921FA25850D73CF8FEE12D6 (void);
+extern void Vector2WithModifiersComposite__ctor_mE9A403D9ED2E1409B769A893680730942209D875 (void);
+extern void Vector3WithModifiersComposite_ReadValue_m1AC4E26A45F46298C6A0639E83A3DFB2B2960C61 (void);
+extern void Vector3WithModifiersComposite__ctor_mE319624B432125A931A60C1D353616AFBEC0AC03 (void);
+static Il2CppMethodPointer s_methodPointers[19] = 
+{
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC1B50842A4DF7A504396B9B1477C7B8BA6B4C0AC,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m49424A75D672234BCAE804384888C006F3182C18,
+	AxisWithModifiersComposite_ReadValue_m7EA5DA95F3A0FC805ACF4FF8C90FE840F2C9B672,
+	AxisWithModifiersComposite__ctor_m1F55033D901BF61E312071EE4247855A521E9C8D,
+	CustomInputRegistration_Register_mF1C24932DF98FDD99DE9ACC84ED2EFFD947F4F4F,
+	HighestMagnitudeFloatComparer_Compare_m4489B317AAB1E11454BE74F48A90AB7DEDB0BBD8,
+	LowestMagnitudeFloatComparer_Compare_mF9E920CA47509D686ECE105F8825ADDA2CB6AE9F,
+	NegateButtonProcessor_Process_m4804E481075A9C699CAB23424200011C016B3560,
+	NegateButtonProcessor__ctor_m5AE512DDDB4347F6722E4DBFE5A4203690BDDB50,
+	NormalizeScreenHeightProcessor_Process_mC827A6B36252258A92F2849023C0EC2BF3C481CA,
+	NormalizeScreenHeightProcessor__ctor_m01A95028DBA83285F4EA84CBDF2919AEBD53F0B4,
+	NormalizeScreenPositionProcessor_Process_m1CFDEB9CB53D9F894965020F2B412B7A120CA5C9,
+	NormalizeScreenPositionProcessor__ctor_m62FB9D91577E2CAEABF871F253715FA731646797,
+	NormalizeScreenWidthProcessor_Process_mCA53088C7B8DDB770C8151A709E997E2C5B6C834,
+	NormalizeScreenWidthProcessor__ctor_m779C1DBFB4C855798B30C7B11189CD92CFB6EC59,
+	Vector2WithModifiersComposite_ReadValue_m7586A5F36489DC55F921FA25850D73CF8FEE12D6,
+	Vector2WithModifiersComposite__ctor_mE9A403D9ED2E1409B769A893680730942209D875,
+	Vector3WithModifiersComposite_ReadValue_m1AC4E26A45F46298C6A0639E83A3DFB2B2960C61,
+	Vector3WithModifiersComposite__ctor_mE319624B432125A931A60C1D353616AFBEC0AC03,
+};
+extern void HighestMagnitudeFloatComparer_Compare_m4489B317AAB1E11454BE74F48A90AB7DEDB0BBD8_AdjustorThunk (void);
+extern void LowestMagnitudeFloatComparer_Compare_mF9E920CA47509D686ECE105F8825ADDA2CB6AE9F_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] = 
+{
+	{ 0x06000006, HighestMagnitudeFloatComparer_Compare_m4489B317AAB1E11454BE74F48A90AB7DEDB0BBD8_AdjustorThunk },
+	{ 0x06000007, LowestMagnitudeFloatComparer_Compare_mF9E920CA47509D686ECE105F8825ADDA2CB6AE9F_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[19] = 
+{
+	17113,
+	9875,
+	6972,
+	9875,
+	17097,
+	2988,
+	2988,
+	3282,
+	9875,
+	3282,
+	9875,
+	3317,
+	9875,
+	3282,
+	9875,
+	7119,
+	9875,
+	7142,
+	9875,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Aginerian_Input_CodeGenModule;
+const Il2CppCodeGenModule g_Aginerian_Input_CodeGenModule = 
+{
+	"Aginerian.Input.dll",
+	19,
+	s_methodPointers,
+	2,
+	s_adjustorThunks,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

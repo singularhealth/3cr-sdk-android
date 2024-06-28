@@ -26,7 +26,7 @@ dependencies {
 }
 //afterEvaluate {
     group = "com.github.singularhealth"
-    version = "1.2.6"
+    version = "1.2.7"
 //    apply {
 //        plugin("maven-publish")
 //        plugin("ca.stellardrift.publish-github-release")
@@ -108,9 +108,20 @@ dependencies {
         releaseName = "v$version"
         releaseBody = "Updated Release version for @3cr/sdk-android: v$version"
         tagName = "v$version"
+        println(project.rootProject.projectDir.path)
 
         artifacts.from(
-            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/*",
+//            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/*",
+            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.aar",
+            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.aar.md5",
+            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.aar.sha1",
+            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.aar.sha256",
+            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.aar.sha512",
+            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.pom",
+            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.pom.md5",
+            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.pom.sha1",
+            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.pom.sha256",
+            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.pom.sha512",
 //            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.pom"
         )
     }
