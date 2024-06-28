@@ -10,5 +10,5 @@ pluginManagement {
 }
 
 
-rootProject.name = "sdk-3cr-android"
+rootProject.name = "3cr-sdk-android"
 include ':viewer-sdk-android'

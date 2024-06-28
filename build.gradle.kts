@@ -24,18 +24,18 @@ buildscript {
 dependencies {
     project(":viewer-sdk-android")
 }
-subprojects {
+//afterEvaluate {
     group = "com.github.singularhealth"
-    version = "1.2.2"
-    apply {
-        plugin("maven-publish")
-        plugin("ca.stellardrift.publish-github-release")
-    }
+    version = "1.2.6"
+//    apply {
+//        plugin("maven-publish")
+//        plugin("ca.stellardrift.publish-github-release")
+//    }
     publishing {
         publications {
             create<MavenPublication>(project.name) {
-                artifactId = "sdk-3cr-android"
-                artifact("build/outputs/aar/${project.name}-debug.aar")
+                artifactId = "3cr-sdk-android"
+                artifact("viewer-sdk-android/build/outputs/aar/viewer-sdk-android-debug.aar")
                 fileTree("*.jar").forEach {
                     compile(it.path)
                 }
@@ -57,9 +57,9 @@ subprojects {
                         }
                     }
                     scm {
-                        connection = "scm:git:git://github.com/singularhealth/sdk-3cr-android"
-                        developerConnection = "scm:git:ssh://github.com/singularhealth/sdk-3cr-android.git"
-                        url = "https://github.com/singularhealth/sdk-3cr-android"
+                        connection = "scm:git:git://github.com/singularhealth/3cr-sdk-android"
+                        developerConnection = "scm:git:ssh://github.com/singularhealth/3cr-sdk-android.git"
+                        url = "https://github.com/singularhealth/3cr-sdk-android"
                     }
                     withXml {
                         val depsNode  = asNode().appendNode("dependencies")
@@ -110,9 +110,9 @@ subprojects {
         tagName = "v$version"
 
         artifacts.from(
-            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/sdk-3cr-android/$version/sdk-3cr-android-$version.aar",
-            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/sdk-3cr-android/$version/sdk-3cr-android-$version.pom"
+            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/*",
+//            "${project.rootProject.projectDir.path}/build/repo/com/github/singularhealth/3cr-sdk-android/$version/3cr-sdk-android-$version.pom"
         )
     }
 
-}
+//}
