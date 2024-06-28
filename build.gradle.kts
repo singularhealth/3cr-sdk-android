@@ -26,7 +26,7 @@ dependencies {
 }
 //afterEvaluate {
     group = "com.github.singularhealth"
-    version = "1.2.7"
+    version = "1.2.8"
 //    apply {
 //        plugin("maven-publish")
 //        plugin("ca.stellardrift.publish-github-release")
