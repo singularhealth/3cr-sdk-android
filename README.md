@@ -2,7 +2,7 @@
 
 [After a complete example?](https://github.com/singularhealth/3cr-sdk-android-example)
 
-### Current Version: `1.2.8`
+### Current Version: `1.2.9`
 ### Prerequisites
 
 - Gradle Groovy or Kotlin DSL for Gradle
@@ -57,7 +57,7 @@
       // build.gradle.kts
     
       dependencies {
-          implementation("com.github.singularhealth:3cr-sdk-android:1.2.8")
+          implementation("com.github.singularhealth:3cr-sdk-android:1.2.9")
       }
     
       ```
@@ -70,7 +70,7 @@
       // build.gradle
     
       dependencies {
-         implementation 'com.github.singularhealth:3cr-sdk-android:1.2.8'
+         implementation 'com.github.singularhealth:3cr-sdk-android:1.2.9'
       }
     
       ```
